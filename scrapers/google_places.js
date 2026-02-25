@@ -71,7 +71,7 @@ async function scrapeZip(zip, lat, lng) {
   }
 }
 
-const zips = fs.readFileSync('./data/zip_codes_mt.csv', 'utf8')
+const zips = fs.readFileSync('./data/zip_codes_tx.csv', 'utf8')
   .split('\n')
   .map(l => l.trim())
   .filter(l => l.length > 0)
